@@ -159,23 +159,31 @@
 
         //Exercise 8-----//Write a method to display the multiplication table(from 1 to 12) of a given integer
         // Having trouble with this one. It adds but does not multiply??
-        public static void Math()
+        public static void Math()     ///Disregard. Fixed it this morning, had to review a bit and also used google a lot :)
         {
-            int a = 1;
-            int b = 1;
+            //int a = 1;
+            //int b = 1;
 
 
-            while (a <= 12 && b <= 12)
+            //while (a <= 12 && b <= 12)
+            //{
+
+            //    Console.WriteLine(a * b);
+            //    a++;
+            //}
+
+
+            Console.WriteLine("Enter number");
+            int num, i, res;
+            num = int.Parse(Console.ReadLine());
+            for ( i = 1; i<= 12; i++)
             {
-
-                Console.WriteLine(a * b);
-                a++;
+                res = num * i;
+                Console.WriteLine("{0} x {1} = {2} ", num, i, res);
+                
             }
 
-
-
-
-
+            Console.ReadLine();
 
             //Call the methods to test them in the Main method below
 
